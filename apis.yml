@@ -1,8 +1,25 @@
 aid: carezone
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/carezone.png
 name: Carezone
-description: 'Carezone is a company surfaced as a portfolio company of obvious-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: human-health. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'CareZone is a consumer digital-health company (Care Zone Inc., backed by Obvious Ventures)
+  offering a medication-management and family health-organization platform. Its mobile app lets people
+  scan pill bottles to track medications, set reminders, log health readings such as blood glucose and
+  blood pressure, and organize care information for themselves and loved ones, with a free medication
+  delivery service and Medicare savings consultations. CareFlow, CareZone''s pharmacy platform, automates
+  traditional pharmacy workflows behind an ecommerce experience. The app reports over 5 million installs.
+  CareZone operates as a consumer product and does not publish a public developer program, API
+  documentation, or SDKs; this profile captures its public identity and domain-security posture.'
 url: https://raw.githubusercontent.com/api-evangelist/carezone/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Human Health
+- Medication Management
+- Digital Health
+- Pharmacy
+- Consumer Health
+- Care Coordination
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/carezone-domain-security.yml
 - type: Website
   url: https://carezone.com
+- type: PrivacyPolicy
+  url: https://carezone.com/privacy.html
+- type: TermsOfService
+  url: https://carezone.com/tos.html
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
